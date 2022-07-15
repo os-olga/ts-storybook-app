@@ -1,0 +1,70 @@
+$notAvailable: #EB5757;
+$new: #6FCF97;
+$active: #FF8437;
+$deactivated: #515B6C;
+$process: #2D9CDB;
+$completed: #219653;
+$recomended: #56CCF2;
+$competitorPosition: #2F80ED;
+
+.badge{
+    color: #ffffff;
+    border-radius: 4px;
+    width: fit-content;
+    
+    &_size {
+        &_sm {
+            padding:  4px 6px;
+            font-size: 10px;
+        }
+
+        &_md {
+            padding:  4px 8px;
+            font-size: 12px;
+        }
+
+        &_lg {
+            padding:  6px 10px;
+            font-size: 14px;
+        }
+    }
+
+    &_type {
+        &_notAvailable {
+            background-color: $notAvailable;
+        }
+        &_new {  
+            background-color: $new;
+        }
+        &_popular {  
+            background-color: var(--warning);
+        }
+        &_inactive {  
+            background-color: var(--inactive);
+        }
+        &_active {  
+            background-color: $active;
+        }
+        &_deactivated {  
+            background-color: $deactivated;
+        }
+        &_process {  
+            background-color: $process;
+        }
+        &_onApproval {  
+            background-color: var(--warning);
+        }
+        &_completed {  
+            background-color: $completed;
+        }
+        &_unpublished {  
+            background-color: var(--inactive);
+        }
+        &_recomended {  
+            background-color: $recomended;
+        }
+        &_competitorPosition {  
+            background-color: $competitorPosition;
+        }
+    }
+}

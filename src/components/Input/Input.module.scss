@@ -1,0 +1,47 @@
+$default-color: #d7dbe2;
+
+.input {
+    height: 56px;
+    position: relative;
+    width: 328px;
+    border-radius: 4px;
+    background: var(--white);
+  
+  .tag {
+    padding: 16px;
+    width: 100%;
+    font-family: 'T-Star Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-main);
+    transition: all 0.3s linear;
+    &:focus {
+      outline-color: var(--main);
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    transition: all 0.3s linear;
+    background: var(--white);
+    padding: 0 4px;
+  }
+
+  input:focus + .label {
+    color: var(--main);
+    border-color: var(--main);
+    position: absolute;
+    top: -10px;
+    transition: all 0.3s linear;
+  }
+
+  input:focus + label {
+    border-color: var(--main);
+  }
+
+
+}
